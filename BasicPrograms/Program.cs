@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year");
+            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year \n 5.Power Of Two");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -23,6 +23,10 @@
                 case 4:
                     LeapYear leapyear = new LeapYear();
                     leapyear.Leapyear();
+                    break;
+                case 5:
+                    PowerofTwo powerTwo = new PowerofTwo();
+                    powerTwo.Poweroftwo();
                     break;
                 default:
                     break;
