@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year \n 5.Power Of Two \n 6.Swap Two Numbers \n 7.Vowel Or Consonant \n 8.Quotient and Remainder");
+            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year \n 5.Power Of Two \n 6.Swap Two Numbers \n 7.Vowel Or Consonant \n 8.Quotient and Remainder \n 9.Harmonic Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -39,7 +39,11 @@
                 case 8:
                     QuotientRemainder quotientRemainder = new QuotientRemainder();
                     quotientRemainder.Quotient();
-                    break; 
+                    break;
+                case 9:
+                    HarmonicNo harmonicNo = new HarmonicNo();
+                    harmonicNo.HarmonicNumberSolution();
+                    break;
                 default:
                     break;
             }
