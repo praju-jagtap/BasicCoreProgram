@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year \n 5.Power Of Two \n 6.Swap Two Numbers \n 7.Vowel Or Consonant \n 8.Quotient and Remainder \n 9.Harmonic Number");
+            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year \n 5.Power Of Two \n 6.Swap Two Numbers \n 7.Vowel Or Consonant \n 8.Quotient and Remainder \n 9.Harmonic Number \n 10.Prime Factors");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -44,6 +44,11 @@
                     HarmonicNo harmonicNo = new HarmonicNo();
                     harmonicNo.HarmonicNumberSolution();
                     break;
+                case 10:
+                    Factor factor = new Factor();
+                    factor.PrimeFactor();
+                    break;
+
                 default:
                     break;
             }
