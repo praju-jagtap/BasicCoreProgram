@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year \n 5.Power Of Two \n 6.Swap Two Numbers");
+            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year \n 5.Power Of Two \n 6.Swap Two Numbers \n 7.Vowel Or Consonant");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -31,6 +31,10 @@
                 case 6:
                     SwapNo swapNo = new SwapNo();
                     swapNo.swap();
+                    break;
+                case 7:
+                    Vowel vowel = new Vowel();
+                    vowel.VowelOrConsonant();
                     break;
                 default:
                     break;
