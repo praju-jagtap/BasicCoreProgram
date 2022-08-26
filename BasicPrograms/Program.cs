@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers");
+            Console.WriteLine("Please Select Your Choice \n 1.FlipCoin \n 2.EvenOdd \n 3.Largest Among Three Numbers \n 4.Leap Year");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -20,9 +20,12 @@
                     LargestNo largeNo = new LargestNo();
                     largeNo.Largest();
                     break;
+                case 4:
+                    LeapYear leapyear = new LeapYear();
+                    leapyear.Leapyear();
+                    break;
                 default:
                     break;
-                    
             }
         }
     }
